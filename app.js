@@ -93,7 +93,7 @@ btn[0].addEventListener('click',()=>{
                 h3.classList.add('started')
                 totalSecond--;
                 second--;
-                if(second==0) second=59;
+                if(second<=0) second=59;
                 if(second==59){
                     if(minute==0){
                         if(hour>0){
@@ -104,7 +104,7 @@ btn[0].addEventListener('click',()=>{
                             minute=59;
                         }
                     }
-                    else if(minute>0){
+                    else if(minute>=0){
                         minute--;
                     }
                 }
